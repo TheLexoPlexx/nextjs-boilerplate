@@ -1,1 +1,0 @@
-# sh_finance_bot_website
