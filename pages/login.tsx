@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Link from 'next/link'
 import styles from '../styles/Home.module.scss'
 
 const Home: NextPage = () => {
@@ -14,12 +13,12 @@ const Home: NextPage = () => {
 
       <div className={styles.main}>
         <h1>Login</h1>
-        <h3>Hier steht Text.</h3>
-        <Link href="/login">
-          <a>Link</a>
-        </Link>
+        <input type="text" placeholder="Benutzername"></input>
+        <input type="password" placeholder="Passwort"></input>
+        <input type="submit"></input>
       </div>
     </div>
+
   )
 }
 
