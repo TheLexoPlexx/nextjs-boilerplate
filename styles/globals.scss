@@ -7,15 +7,23 @@ body {
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  color: #99c7ff;
+  text-decoration: underline;
 }
 
 * {
   box-sizing: border-box;
+  transition: 0.2s ease-in-out;
 }
 
 :root {
+  //s&h colors
+  --sh-blue: #002148; //Nicht-ganz-Oxford-Blau
+  --henos-aqua: #00cdcd;
+  --henos-gray: #1f2022;
+  --white: #fdfdff; //Fast-weiß
+  --black: #050505; //Fast-schwarz
+
   // body font size
   --text-base-size: 1em;
   
