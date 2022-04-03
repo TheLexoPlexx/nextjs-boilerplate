@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
+import Navbar from '../components/navbar'
 import styles from '../styles/Home.module.scss'
 
 const Home: NextPage = () => {
@@ -8,9 +9,9 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <Head>
         <title>CryptoBot Dashboard</title>
-        <meta name="description" content="Dashboard für den CryptoBot" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <Navbar />
 
       <div className={styles.main}>
         <h1>Login</h1>
@@ -24,3 +25,6 @@ const Home: NextPage = () => {
 }
 
 export default Home
+
+// https://nextjs.org/examples
+// https://www.freecodecamp.org/news/dynamic-navigation-in-nextjs/
