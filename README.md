@@ -6,7 +6,11 @@
 Node auf WSL2 installieren:
 
 `sudo apt-get install curl`
+
 `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
+
 TERMINAL NEU STARTEN
+
 `nvm install --lts`
+
 Version prüfen mit `nvm -v`
