@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prisma studio": "npx prisma studio --browser firefox",
+    "prisma migrate": "npx prisma migrate dev --name init",
+    "prisma gen": "npx prisma generate",
+    "prisma format": "npx prisma format"
   },
   "dependencies": {
     "next": "12.1.0",
@@ -18,6 +22,7 @@
     "@types/react": "17.0.42",
     "eslint": "8.11.0",
     "eslint-config-next": "12.1.0",
+    "prisma": "^3.14.0",
     "sass": "^1.49.9",
     "typescript": "4.6.2"
   }
