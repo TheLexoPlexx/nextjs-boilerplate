@@ -17,6 +17,7 @@ const Home: NextPage = () => {
                       This is <u>underlined</u> and this is code: <code>for (;;) </code>.
                       Finally, this is a <a href="#">link</a>.</p>
                       <hr />
+                      <h1>Heading Level 1</h1>
                       <h2>Heading Level 2</h2>
                       <h3>Heading Level 3</h3>
                       <h4>Heading Level 4</h4>
@@ -105,9 +106,9 @@ const Home: NextPage = () => {
                         <li><a href="#" className="button alt">Default</a></li>
                       </ul>
                       <ul className="actions small">
-                        <li><a href="#" className="button special small">Small</a></li>
-                        <li><a href="#" className="button small">Small</a></li>
-                        <li><a href="#" className="button alt small">Small</a></li>
+                        <li><a href="#" className="button special">Small</a></li>
+                        <li><a href="#" className="button">Small</a></li>
+                        <li><a href="#" className="button alt">Small</a></li>
                       </ul>
                       <div className="row">
                         <div className="3u 12u$(small)">
@@ -119,23 +120,23 @@ const Home: NextPage = () => {
                         </div>
                         <div className="3u 12u$(small)">
                           <ul className="actions vertical small">
-                            <li><a href="#" className="button special small">Small</a></li>
-                            <li><a href="#" className="button small">Small</a></li>
-                            <li><a href="#" className="button alt small">Small</a></li>
+                            <li><a href="#" className="button special">Small</a></li>
+                            <li><a href="#" className="button">Small</a></li>
+                            <li><a href="#" className="button alt">Small</a></li>
                           </ul>
                         </div>
                         <div className="3u 12u$(small)">
                           <ul className="actions vertical">
-                            <li><a href="#" className="button special fit">Default</a></li>
-                            <li><a href="#" className="button fit">Default</a></li>
-                            <li><a href="#" className="button alt fit">Default</a></li>
+                            <li><a href="#" className="button special">Default</a></li>
+                            <li><a href="#" className="button">Default</a></li>
+                            <li><a href="#" className="button alt">Default</a></li>
                           </ul>
                         </div>
                         <div className="3u$ 12u$(small)">
                           <ul className="actions vertical small">
-                            <li><a href="#" className="button special small fit">Small</a></li>
-                            <li><a href="#" className="button small fit">Small</a></li>
-                            <li><a href="#" className="button alt small fit">Small</a></li>
+                            <li><a href="#" className="button special">Small</a></li>
+                            <li><a href="#" className="button">Small</a></li>
+                            <li><a href="#" className="button alt">Small</a></li>
                           </ul>
                         </div>
                       </div>
@@ -144,56 +145,8 @@ const Home: NextPage = () => {
                       <blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis.</blockquote>
 
                       <h3>Table</h3>
-
-                      <h4>Default</h4>
                       <div className="table-wrapper">
                         <table>
-                          <thead>
-                            <tr>
-                              <th>Name</th>
-                              <th>Description</th>
-                              <th>Price</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>Item 1</td>
-                              <td>Ante turpis integer aliquet porttitor.</td>
-                              <td>29.99</td>
-                            </tr>
-                            <tr>
-                              <td>Item 2</td>
-                              <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                              <td>19.99</td>
-                            </tr>
-                            <tr>
-                              <td>Item 3</td>
-                              <td> Morbi faucibus arcu accumsan lorem.</td>
-                              <td>29.99</td>
-                            </tr>
-                            <tr>
-                              <td>Item 4</td>
-                              <td>Vitae integer tempus condimentum.</td>
-                              <td>19.99</td>
-                            </tr>
-                            <tr>
-                              <td>Item 5</td>
-                              <td>Ante turpis integer aliquet porttitor.</td>
-                              <td>29.99</td>
-                            </tr>
-                          </tbody>
-                          <tfoot>
-                            <tr>
-                              <td colSpan={2}></td>
-                              <td>100.00</td>
-                            </tr>
-                          </tfoot>
-                        </table>
-                      </div>
-
-                      <h4>Alternate</h4>
-                      <div className="table-wrapper">
-                        <table className="alt">
                           <thead>
                             <tr>
                               <th>Name</th>

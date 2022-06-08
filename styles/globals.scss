@@ -1,5 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,500;1,700&family=Roboto+Slab:wght@500&display=swap');
 
 :root {
   //s&h colors
@@ -7,12 +8,13 @@
   --henos-aqua: #00cdcd;
   --henos-gray: #1f2022;
 
-	--link-color: #99c7ff;
+	--link-color: var(--sh-blue); //#99c7ff;
+
+	//button alt muss zurück
 
 	//new colors
-	--accent-1: #8a4680;
-	--accent-2: #9b4f90;
-	--accent-3: #793d70;
+	--accent-1: var(--sh-blue);
+	--accent-2: #222;
 	--gray-1: #444;
 	--gray-2: #555;
 	--gray-3: #bbb;
@@ -25,7 +27,6 @@
 
 	//--background: #002148;
 	--background: var(--white);
-
 
   // body font size
   --text-base-size: 1em;
@@ -46,8 +47,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Raleway', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
   background: var(--background);
 }
 
@@ -140,7 +140,6 @@ body,
 input,
 select,
 textarea {
-	font-family: "Poppins", sans-serif;
 	font-weight: 300;
 	font-size: 1rem;
 	line-height: 1.65;
@@ -190,21 +189,23 @@ p {
 	}
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
 	line-height: 1.5;
 	margin: 0 0 1rem 0;
+	font-family: 'Roboto Slab', serif;
+	color: var(--gray-2);
 
 	a {
 
 		color: inherit;
 		text-decoration: none;
 	}
+}
+
+
+h1 {
+	font-size: 2.35rem;
 }
 
 h2 {
@@ -227,15 +228,16 @@ h6 {
 	font-size: 0.7rem;
 }
 
-sub {
+sub, sup {
 	font-size: 0.8rem;
 	position: relative;
+}
+
+sub {
 	top: 0.5rem;
 }
 
 sup {
-	font-size: 0.8rem;
-	position: relative;
 	top: -0.5rem;
 }
 
@@ -285,21 +287,8 @@ textarea {
 	color: var(--gray-2);
 }
 
-a {
-	color: var(--accent-1);
-}
-
 strong,
 b {
-	color: var(--gray-2);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
 	color: var(--gray-2);
 }
 
@@ -344,7 +333,7 @@ button,
 	text-transform: uppercase;
 	white-space: nowrap;
 	background-color: var(--nearly-white);
-	color: var(--black) !important;
+	color: var(--black); //!important
 
 	&.icon {
 		padding-left: 1.35rem;
@@ -354,18 +343,16 @@ button,
 		}
 	}
 
+	//Muss nicht verwendet werden, wenn ul.actions schon .fit hat
 	&.fit {
 		display: block;
 		margin: 0 0 1rem 0;
 		width: 100%;
 	}
 
+	//Muss nicht verwendet werden, wenn ul.actions schon .small hat
 	&.small {
 		font-size: 0.8rem;
-	}
-
-	&.big {
-		font-size: 1.35rem;
 	}
 
 	&.special {
@@ -377,7 +364,7 @@ button,
 		}
 
 		&:active {
-			background-color: var(--accent-3);
+			background-color: var(--accent-2);
 		}
 	}
 
@@ -390,7 +377,8 @@ button,
 	}
 
 	&:hover {
-		background-color: var(--white);
+		background-color: var(--gray-2);
+		color: var(--nearly-white);
 	}
 
 	&:active {
@@ -400,6 +388,25 @@ button,
 	@media screen and (max-width: 480px) {
 		padding: 0;
 		width: 100%;
+	}
+
+	&.alt {
+		background-color: transparent;
+		box-shadow: inset 0 0 0 3px rgba(144, 144, 144, 0.25);
+		color: #555 !important;
+
+		&:hover {
+			background-color: rgba(144, 144, 144, 0.075);
+		}
+		&:active {
+			background-color: rgba(144, 144, 144, 0.2);
+		}
+
+		&.icon {
+			&::before {
+				color: #bbb;
+			}
+		}
 	}
 
 }
@@ -494,7 +501,7 @@ input[type="radio"] {
 	width: 1rem;
 	z-index: -1;
 
-	+label {
+	+ label {
 		text-decoration: none;
 		cursor: pointer;
 		display: inline-block;
@@ -754,7 +761,11 @@ ul {
 				display: table-cell;
 				padding: 0 0 0 1rem;
 
-				>* {
+				>* {			
+					display: block;
+					margin: 0 0 1rem 0;
+					width: 100%;
+
 					margin-bottom: 0;
 				}
 			}
@@ -766,6 +777,9 @@ ul {
 
 			li {
 				padding: 0 0 0 0.5rem;
+				>* {
+					font-size: 0.8rem;
+				}
 			}
 		}
 	}
