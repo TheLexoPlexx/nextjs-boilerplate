@@ -266,7 +266,7 @@ const Home: NextPage = () => {
                             <label htmlFor="copy">Email me a copy of this message</label>
                           </div>
                           <div className="6u$ 12u$(small)">
-                            <input type="checkbox" id="human" name="human" checked />
+                            <input type="checkbox" id="human" name="human" />
                             <label htmlFor="human">I am a human and not a robot</label>
                           </div>
 
