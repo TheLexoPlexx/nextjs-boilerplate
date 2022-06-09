@@ -15,8 +15,8 @@
 	//new colors
 	--accent-1: var(--sh-blue);
 	--accent-2: #222;
-	--gray-1: #444;
-	--gray-2: #555;
+	--paragraph-color: #444;
+	--header-color: #555;
 	--gray-3: #bbb;
 	--gray-4: #e5e5e5;
 
@@ -133,7 +133,7 @@ html {
 }
 
 body {
-	color: var(--gray-1);
+	color: var(--paragraph-color);
 }
 
 body,
@@ -194,7 +194,7 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1.5;
 	margin: 0 0 1rem 0;
 	font-family: 'Roboto Slab', serif;
-	color: var(--gray-2);
+	color: var(--header-color);
 
 	a {
 
@@ -273,7 +273,7 @@ pre {
 
 hr {
 	border: 0;
-	border-bottom: solid 1px;
+	border-bottom: solid 1px var(--header-color);
 	margin: 2rem 0;
 
 	&.major {
@@ -284,12 +284,12 @@ hr {
 input,
 select,
 textarea {
-	color: var(--gray-2);
+	color: var(--header-color);
 }
 
 strong,
 b {
-	color: var(--gray-2);
+	color: var(--header-color);
 }
 
 blockquote {
@@ -299,10 +299,6 @@ blockquote {
 code {
 	background: rgba(144, 144, 144, 0.075);
 	border-color: rgba(144, 144, 144, 0.25);
-}
-
-hr {
-	border-bottom-color: rgba(144, 144, 144, 0.25);
 }
 
 /* Button */
@@ -377,7 +373,7 @@ button,
 	}
 
 	&:hover {
-		background-color: var(--gray-2);
+		background-color: var(--header-color);
 		color: var(--nearly-white);
 	}
 
@@ -511,7 +507,7 @@ input[type="radio"] {
 		padding-right: 0.75rem;
 		position: relative;
 
-		color: var(--gray-1);
+		color: var(--paragraph-color);
 
 		&:before {
 			-moz-osx-font-smoothing: grayscale;
@@ -578,7 +574,7 @@ input[type="radio"]+label:before {
 }
 
 label {
-	color: var(--gray-2);
+	color: var(--header-color);
 }
 
 input[type="text"],
@@ -887,7 +883,7 @@ table {
 		padding: 0 0.75rem 0.75rem 0.75rem;
 		text-align: left;
 
-		color: var(--gray-2);
+		color: var(--header-color);
 	}
 
 	thead {
