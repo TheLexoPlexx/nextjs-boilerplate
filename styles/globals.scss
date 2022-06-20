@@ -10,13 +10,11 @@
 
 	--link-color: var(--sh-blue); //#99c7ff;
 
-	//button alt muss zurück
-
 	//new colors
 	--accent-1: var(--sh-blue);
 	--accent-2: #222;
-	--paragraph-color: #444;
-	--header-color: #555;
+	--paragraph-color: #444; //Content
+	--header-color: #555; //Headers
 	--gray-3: #bbb;
 	--gray-4: #e5e5e5;
 
@@ -41,7 +39,6 @@
   --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
   --text-xxxl: calc(var(--text-xxl) * var(--text-scale-ratio));
 }
-
 
 html,
 body {
@@ -331,6 +328,11 @@ button,
 	background-color: var(--nearly-white);
 	color: var(--black); //!important
 
+	&:disabled {
+		color: var(--gray-3);
+		cursor: not-allowed;
+	}
+	
 	&.icon {
 		padding-left: 1.35rem;
 
