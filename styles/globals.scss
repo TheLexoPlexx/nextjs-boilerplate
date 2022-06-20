@@ -438,9 +438,15 @@ textarea {
 	padding: 0 1rem;
 	text-decoration: none;
 	width: 100%;
+	
+	height: 2.75rem;
 
 	&:invalid {
 		box-shadow: none;
+	}
+
+	&:disabled {
+		color: var(--header-color);
 	}
 }
 
@@ -471,13 +477,6 @@ textarea {
 	&::-ms-expand {
 		display: none;
 	}
-}
-
-input[type="text"],
-input[type="password"],
-input[type="email"],
-select {
-	height: 2.75rem;
 }
 
 textarea {
