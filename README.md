@@ -1,5 +1,7 @@
 # Next.js Boilerplate
 
+Includes a small nice template (globals.scss), might add github pages later.
+
 ## Stack:
 * Next.js
 * Typescript
