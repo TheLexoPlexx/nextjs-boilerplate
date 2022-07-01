@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Image from "next/image"
 
-import { MdBackpack, MdCheck, MdDownload, MdFacebook, MdHandyman, MdKeyboard, MdPages, MdSearch } from "react-icons/md"
+import { MdArrowDownward, MdBackpack, MdCheck, MdDownload, MdExpandMore, MdFacebook, MdHandyman, MdKeyboard, MdPages, MdSearch } from "react-icons/md"
 
 import pic01 from '../public/pic01.jpg'
 import pic02 from '../public/pic02.jpg'
@@ -238,15 +238,14 @@ const Home: NextPage = () => {
                   </div>
 
                   <div className="12u$">
-                    <div className="select-wrapper">
-                      <select name="category" id="category">
-                        <option>- Category -</option>
-                        <option>Manufacturing</option>
-                        <option>Shipping</option>
-                        <option>Administration</option>
-                        <option>Human Resources</option>
-                      </select>
-                    </div>
+                    <MdExpandMore />
+                    <select name="category" id="category">
+                      <option selected disabled hidden>Select...</option>
+                      <option>Manufacturing</option>
+                      <option>Shipping</option>
+                      <option>Administration</option>
+                      <option>Human Resources</option>
+                    </select>
                   </div>
 
                   <div className="4u 12u$(small)">
