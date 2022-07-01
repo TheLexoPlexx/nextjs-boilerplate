@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import { MdBackpack, MdCheck, MdDownload, MdFacebook, MdHandyman, MdKeyboard, MdPages, MdSearch } from "react-icons/md"
 
 const Home: NextPage = () => {
   return (
@@ -73,12 +74,11 @@ const Home: NextPage = () => {
 
                           <h4>Icons</h4>
                           <ul className="icons">
-                            <li><a href="#" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
-                            <li><a href="#" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
-                            <li><a href="#" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
-                            <li><a href="#" className="icon fa-github"><span className="label">Github</span></a></li>
-                            <li><a href="#" className="icon fa-dribbble"><span className="label">Dribbble</span></a></li>
-                            <li><a href="#" className="icon fa-tumblr"><span className="label">Tumblr</span></a></li>
+                            <li><MdPages /></li>
+                            <li><MdHandyman /></li>
+                            <li><MdKeyboard /></li>
+                            <li><MdBackpack /></li>
+                            <li><MdFacebook /></li>
                           </ul>
 
                         </div>
@@ -215,9 +215,9 @@ const Home: NextPage = () => {
                         <li><a href="#" className="button alt fit small">Fit + Small</a></li>
                       </ul>
                       <ul className="actions">
-                        <li><a href="#" className="button special icon fa-search">Icon</a></li>
-                        <li><a href="#" className="button icon fa-download">Icon</a></li>
-                        <li><a href="#" className="button alt icon fa-check">Icon</a></li>
+                        <li><a href="#" className="button special icon"><MdSearch />Icon</a></li>
+                        <li><a href="#" className="button icon"><MdDownload />Icon</a></li>
+                        <li><a href="#" className="button alt icon"><MdCheck />Icon</a></li>
                       </ul>
                       <ul className="actions">
                         <li><span className="button special disabled">Special</span></li>

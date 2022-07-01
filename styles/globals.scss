@@ -337,9 +337,16 @@ button,
 	
 	&.icon {
 		padding-left: 1.35rem;
+		vertical-align: middle;
 
 		&::before {
 			margin-right: 0.5rem;
+		}
+
+		svg {
+			top: 0.15rem;
+			position: inherit;
+			margin-right: 0.15rem;
 		}
 	}
 
@@ -774,11 +781,8 @@ ul {
 		}
 
 		&.fit.small {
-			margin-left: -0.5rem;
-			width: calc(100% + 0.5rem);
-
+			width: calc(100% + 1rem);
 			li {
-				padding: 0 0 0 0.5rem;
 				>* {
 					font-size: 0.8rem;
 				}
