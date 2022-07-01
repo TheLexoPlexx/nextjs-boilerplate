@@ -631,56 +631,23 @@ textarea {
 }
 
 /* Image */
-
 .image {
-	border-radius: 2px;
-	border: 0;
-	display: inline-block;
-	position: relative;
+	margin-bottom: 1rem;
+}
 
-	img {
-		border-radius: 2px;
-		display: block;
-	}
+.img-left, .img-right {
+	max-width: 40%;
+	top: 0.25rem;
+}
 
-	&.left,
-	&.right {
-		max-width: 40%;
-		margin: 0 0 1rem 1.5rem;
-		top: 0.25rem;
+.img-left {
+	float: left;
+	margin: 0 1rem 1rem 0;
+}
 
-		img {
-			width: 100%;
-		}
-	}
-
-	&.left {
-		float: left;
-	}
-
-	&.right {
-		float: right;
-	}
-
-	&.fit {
-		display: block;
-		margin: 0 0 2rem 0;
-		width: 100%;
-
-		img {
-			width: 100%;
-		}
-	}
-
-	.main {
-		display: block;
-		margin: 0 0 3rem 0;
-		width: 100%;
-
-		img {
-			width: 100%;
-		}
-	}
+.img-right {
+	float: right;
+	margin: 0 0 1rem 1rem;
 }
 
 /* List */

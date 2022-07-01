@@ -12,4 +12,4 @@ Includes a small nice template (globals.scss), might add github pages later.
 [Docs](https://react-icons.github.io/react-icons/)
 
 ## Todo:
-* Images
+* Optimize Image for better styling

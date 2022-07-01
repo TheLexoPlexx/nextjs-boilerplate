@@ -1,5 +1,10 @@
 import type { NextPage } from 'next'
+import Image from "next/image"
+
 import { MdBackpack, MdCheck, MdDownload, MdFacebook, MdHandyman, MdKeyboard, MdPages, MdSearch } from "react-icons/md"
+
+import pic01 from '../public/pic01.jpg'
+import pic02 from '../public/pic02.jpg'
 
 const Home: NextPage = () => {
   return (
@@ -230,26 +235,26 @@ const Home: NextPage = () => {
                       <form method="post" action="#">
                         <div className="row uniform">
                           <div className="6u 12u$(xsmall)">
-                            <input type="text" name="name" id="name" value="" placeholder="Name" />
+                            <input type="text" name="name" id="name" placeholder="Name" />
                           </div>
                           <div className="6u$ 12u$(xsmall)">
-                            <input type="email" name="email" id="email" value="" placeholder="Email" />
+                            <input type="email" name="email" id="email" placeholder="Email" />
                           </div>
 
                           <div className="12u$">
                             <div className="select-wrapper">
                               <select name="category" id="category">
-                                <option value="">- Category -</option>
-                                <option value="1">Manufacturing</option>
-                                <option value="1">Shipping</option>
-                                <option value="1">Administration</option>
-                                <option value="1">Human Resources</option>
+                                <option>- Category -</option>
+                                <option>Manufacturing</option>
+                                <option>Shipping</option>
+                                <option>Administration</option>
+                                <option>Human Resources</option>
                               </select>
                             </div>
                           </div>
 
                           <div className="4u 12u$(small)">
-                            <input type="radio" id="priority-low" name="priority" checked />
+                            <input type="radio" id="priority-low" name="priority" />
                             <label htmlFor="priority-low">Low Priority</label>
                           </div>
                           <div className="4u 12u$(small)">
@@ -276,8 +281,8 @@ const Home: NextPage = () => {
 
                           <div className="12u$">
                             <ul className="actions">
-                              <li><input type="submit" value="Send Message" /></li>
-                              <li><input type="reset" value="Reset" className="alt" /></li>
+                              <li><button type="submit">Send Message</button></li>
+                              <li><button type="reset" className="alt">Reset</button></li>
                             </ul>
                           </div>
                         </div>
@@ -288,10 +293,10 @@ const Home: NextPage = () => {
                       <form method="post" action="#">
                         <div className="row uniform">
                           <div className="9u 12u$(small)">
-                            <input type="text" name="query" id="query" value="" placeholder="Query" />
+                            <input type="text" name="query" id="query" placeholder="Query" />
                           </div>
                           <div className="3u$ 12u$(small)">
-                            <input type="submit" value="Search" className="fit" />
+                            <button type="submit" className="fit">Search</button>
                           </div>
                         </div>
                       </form>
@@ -299,31 +304,18 @@ const Home: NextPage = () => {
                       <h3>Image</h3>
 
                       <h4>Fit</h4>
-                      <span className="image fit"><img src="public/pic01.jpg" alt="" /></span>
-                      <div className="box alt">
-                        <div className="row 50% uniform">
-                          <div className="4u"><span className="image fit"><img src="public/pic01.jpg" alt="" /></span></div>
-                          <div className="4u"><span className="image fit"><img src="public/pic01.jpg" alt="" /></span></div>
-                          <div className="4u$"><span className="image fit"><img src="public/pic01.jpg" alt="" /></span></div>
-
-                          <div className="4u"><span className="image fit"><img src="public/pic01.jpg" alt="" /></span></div>
-                          <div className="4u"><span className="image fit"><img src="public/pic01.jpg" alt="" /></span></div>
-                          <div className="4u$"><span className="image fit"><img src="public/pic01.jpg" alt="" /></span></div>
-
-                          <div className="4u"><span className="image fit"><img src="public/pic01.jpg" alt="" /></span></div>
-                          <div className="4u"><span className="image fit"><img src="public/pic01.jpg" alt="" /></span></div>
-                          <div className="4u$"><span className="image fit"><img src="public/pic01.jpg" alt="" /></span></div>
-                        </div>
-                      </div>
+                      <Image src={pic01} layout="responsive" className='image' />
 
                       <h4>Left &amp; Right</h4>
-                      <p><span className="image left"><img src="public/pic02.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis volutpat lorem ipsum dolor sit amet dolor consequat.</p>
-                      <p><span className="image right"><img src="public/pic02.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis volutpat lorem ipsum dolor sit amet dolor consequat.</p>
-
-                      <h3>Box</h3>
-                      <div className="box">
-                        <p>Felis sagittis eget tempus primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Magna sed etiam ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus lorem ipsum dolor sit amet nullam.</p>
-                      </div>
+                      <p><span className="img-left">
+                        <Image src={pic02} />
+                        </span>
+                      Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis volutpat lorem ipsum dolor sit amet dolor consequat.</p>
+                      <p>
+                        <span className="img-right">
+                        <Image src={pic02} />
+                        </span>
+                        Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis volutpat lorem ipsum dolor sit amet dolor consequat.</p>
 
                       <h3>Preformatted</h3>
                       <pre><code>i = 0;
