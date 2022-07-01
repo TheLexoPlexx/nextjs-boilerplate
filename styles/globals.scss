@@ -924,60 +924,6 @@ table {
 	}
 }
 
-
-/* Wahrscheinlich obsolet: */
-
-/* Box */
-
-.box {
-	margin-bottom: 2rem;
-	background: var(--white);
-}
-
-.box .image.fit {
-	margin: 0;
-	border-radius: 0;
-}
-
-.box .image.fit img {
-	border-radius: 0;
-}
-
-.box header h2 {
-	margin-bottom: 2rem;
-}
-
-.box header p {
-	text-transform: uppercase;
-	font-size: .75rem;
-	font-weight: 300;
-	margin: 0 0 .25rem 0;
-	padding: 0 0 .75rem 0;
-	letter-spacing: .25rem;
-}
-
-.box header p:after {
-	content: '';
-	position: absolute;
-	margin: auto;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	width: 50%;
-	height: 1px;
-	background-color: rgba(0, 0, 0, 0.125);
-}
-
-.box .content {
-	padding: 3rem;
-}
-
-.box> :last-child,
-.box> :last-child> :last-child,
-.box> :last-child> :last-child> :last-child {
-	margin-bottom: 0;
-}
-
 @media screen and (max-width: 736px) {
 
 	.box .content {
