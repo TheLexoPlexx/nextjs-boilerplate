@@ -339,6 +339,10 @@ button,
 		padding-left: 1.35rem;
 		vertical-align: middle;
 
+		text-decoration: none;
+		border-bottom: none;
+		position: relative;
+
 		&::before {
 			margin-right: 0.5rem;
 		}
