@@ -211,9 +211,9 @@ const Home: NextPage = () => {
                 <li><a href="#" className="button alt fit">Fit</a></li>
               </ul>
               <ul className="actions fit small">
-                <li><a href="#" className="button special fit small">Fit + Small</a></li>
-                <li><a href="#" className="button fit small">Fit + Small</a></li>
-                <li><a href="#" className="button alt fit small">Fit + Small</a></li>
+                <li><button className="button special fit small">Fit + Small</button></li>
+                <li><button className="button fit small">Fit + Small</button></li>
+                <li><button className="button alt fit small">Fit + Small</button></li>
               </ul>
               <ul className="actions">
                 <li><a href="#" className="button special icon"><MdSearch />Icon</a></li>
@@ -221,9 +221,9 @@ const Home: NextPage = () => {
                 <li><a href="#" className="button alt icon"><MdCheck />Icon</a></li>
               </ul>
               <ul className="actions">
-                <li><span className="button special disabled">Special</span></li>
-                <li><span className="button disabled">Default</span></li>
-                <li><span className="button alt disabled">Alternate</span></li>
+                <li><button className="special disabled">Special</button></li>
+                <li><button className="button disabled">Default</button></li>
+                <li><button className="button alt disabled">Alternate</button></li>
               </ul>
 
               <h3>Form</h3>
