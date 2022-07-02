@@ -13,5 +13,3 @@ Includes a small nice template (globals.scss), might add github pages later.
 
 ## Todo:
 * Optimize Image for better styling
-* Icons in Checkboxes and Radiobuttons
-* Select is not styled very well
