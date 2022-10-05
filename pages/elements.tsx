@@ -1,10 +1,10 @@
-import type { NextPage } from 'next'
+import type { NextPage } from "next"
 import Image from "next/image"
 
-import { MdArrowDownward, MdBackpack, MdCheck, MdDownload, MdExpandMore, MdFacebook, MdHandyman, MdKeyboard, MdPages, MdSearch } from "react-icons/md"
+import { MdBackpack, MdCheck, MdDownload, MdExpandMore, MdFacebook, MdHandyman, MdKeyboard, MdPages, MdSearch } from "react-icons/md"
 
-import pic01 from '../public/pic01.jpg'
-import pic02 from '../public/pic02.jpg'
+import pic01 from "../public/pic01.jpg"
+import pic02 from "../public/pic02.jpg"
 
 const Home: NextPage = () => {
   return (
@@ -299,23 +299,23 @@ const Home: NextPage = () => {
               <h3>Image</h3>
 
               <h4>Fit</h4>
-              <Image src={pic01} layout="responsive" className='image' />
+              <Image alt="" src={pic01} layout="responsive" className="image" />
 
               <h4>Left &amp; Right</h4>
               <p><span className="img-left">
-                <Image src={pic02} />
+                <Image alt="" src={pic02} />
                 </span>
               Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis volutpat lorem ipsum dolor sit amet dolor consequat.</p>
               <p>
                 <span className="img-right">
-                <Image src={pic02} />
+                <Image alt="" src={pic02} />
                 </span>
                 Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis volutpat lorem ipsum dolor sit amet dolor consequat.</p>
 
               <h3>Preformatted</h3>
               <pre><code>i = 0;
 
-print 'It took ' + i + ' iterations to sort the deck.';
+print &quot;It took &quot; + i + &quot; iterations to sort the deck.&quot;;
 </code></pre>
 
           </div>

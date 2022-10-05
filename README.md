@@ -12,8 +12,8 @@ Includes a small nice template (globals.scss), might add github pages later.
 [Docs](https://react-icons.github.io/react-icons/)
 
 ## Updating:
-`ncu -u`
-`npm install`
+`npm update`
+
 `npm i -g npm-check-updates`
 
 ## Todo:
