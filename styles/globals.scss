@@ -23,6 +23,9 @@
 
 	--nearly-white: #f2f2f2;
 
+	--form-background: rgbax(144, 144, 144, 0.075);
+	--form-border: rgbax(144, 144, 144, 0.25)
+
 	//--background: #002148;
 	--background: var(--white);
 
@@ -290,12 +293,12 @@ b {
 }
 
 blockquote {
-	border-left-color: rgba(144, 144, 144, 0.25);
+	border-left-color: var(--form-border);
 }
 
 code {
-	background: rgba(144, 144, 144, 0.075);
-	border-color: rgba(144, 144, 144, 0.25);
+	background: var(--form-background);
+	border-color: var(--form-border);
 }
 
 /* Button */
@@ -407,14 +410,14 @@ button,
 
 	&.alt {
 		background-color: transparent;
-		box-shadow: var(--alt-box-shadow) rgba(144, 144, 144, 0.25);
+		box-shadow: var(--alt-box-shadow) var(--form-border);
 		color: #555 !important;
 
 		&:hover {
-			background-color: rgba(144, 144, 144, 0.075);
+			background-color: var(--form-background);
 		}
 		&:active {
-			background-color: rgba(144, 144, 144, 0.2);
+			background-color: var(--form-border);
 		}
 
 		&.icon {
@@ -515,8 +518,8 @@ input[type="radio"] {
 			top: 0;
 			width: 1.65rem;
 
-			background: rgba(144, 144, 144, 0.075);
-			border-color: rgba(144, 144, 144, 0.25);
+			background: var(--form-background);
+			border-color: var(--form-border);
 		}
 	}
 
@@ -570,8 +573,8 @@ input[type="password"],
 input[type="email"],
 select,
 textarea {
-	background: rgba(144, 144, 144, 0.075);
-	border-color: rgba(144, 144, 144, 0.25);
+	background: var(--form-background);
+	border-color: var(--form-border);
 
 	&:focus {
 		border-color: var(--accent-1);
@@ -580,7 +583,7 @@ textarea {
 
 	option {
 		color: var(--white);
-		background: rgba(144, 144, 144, 0.075);
+		background: var(--form-background);
 	}
 }
 
@@ -828,7 +831,7 @@ table {
 	thead {
 		border-bottom: solid 2px;
 
-		border-bottom-color: rgba(144, 144, 144, 0.25);
+		border-bottom-color: var(--form-border);
 	}
 
 	tbody {
@@ -837,10 +840,10 @@ table {
 			border-left: 0;
 			border-right: 0;
 
-			border-color: rgba(144, 144, 144, 0.25);
+			border-color: var(--form-border);
 
 			&:nth-child(2n + 1) {
-				background-color: rgba(144, 144, 144, 0.075);
+				background-color: var(--form-background);
 			}
 		}
 	}
@@ -848,7 +851,7 @@ table {
 	tfoot {
 		border-top: solid 2px;
 
-		border-top-color: rgba(144, 144, 144, 0.25);
+		border-top-color: var(--form-border);
 	}
 }
 
@@ -861,5 +864,5 @@ table {
 }
 
 .box {
-	border-color: rgba(144, 144, 144, 0.25);
+	border-color: var(--form-border);
 }

@@ -2,6 +2,9 @@
 
 Includes a small nice template (globals.scss), might add github pages later.
 
+## Demo:
+[https://nextjs-boilerplate-9aaqjnp0d-thelexoplexx.vercel.app/elements](https://nextjs-boilerplate-9aaqjnp0d-thelexoplexx.vercel.app/elements)
+
 ## Stack:
 * [Next.js](https://nextjs.org/docs)
 * Typescript
