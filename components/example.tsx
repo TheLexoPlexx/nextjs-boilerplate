@@ -1,7 +1,12 @@
-import React from "react";
+type Props = {
+  title: string,
+  children: React.ReactNode,
+}
 
-export default function () {
+const ExampleComponent = ({ title, children }: Props) => {
   return (
-    <></>
+    <div></div>
   );
 }
+
+export default ExampleComponent
