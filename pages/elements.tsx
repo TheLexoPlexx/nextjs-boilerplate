@@ -236,8 +236,8 @@ const Home: NextPage = () => {
 
                   <div className="12u$">
                     <MdExpandMore />
-                    <select name="category" id="category">
-                      <option selected disabled hidden>Select...</option>
+                    <select defaultValue={0} name="category" id="category">
+                      <option disabled hidden>Select...</option>
                       <option>Manufacturing</option>
                       <option>Shipping</option>
                       <option>Administration</option>
