@@ -406,10 +406,12 @@ button,
 	&.alt {
 		background-color: transparent;
 		box-shadow: var(--alt-box-shadow) var(--form-border);
-		color: #555 !important;
+		color: #555;
 
 		&:hover {
-			background-color: var(--form-background);
+			background-color: var(--header-color);
+			color: var(--nearly-white);
+			// background-color: var(--form-background);
 		}
 		&:active {
 			background-color: var(--form-border);
