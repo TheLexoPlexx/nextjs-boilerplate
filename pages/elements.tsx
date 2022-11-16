@@ -1,7 +1,7 @@
 import type { NextPage } from "next"
 import Image from "next/image"
 
-import { MdBackpack, MdCheck, MdDownload, MdExpandMore, MdFacebook, MdHandyman, MdKeyboard, MdPages, MdSearch } from "react-icons/md"
+import { MdBackpack, MdCheck, MdDownload, MdFacebook, MdHandyman, MdKeyboard, MdPages, MdSearch } from "react-icons/md"
 
 const Home: NextPage = () => {
   return (
@@ -235,7 +235,6 @@ const Home: NextPage = () => {
                   </div>
 
                   <div className="12u$">
-                    <MdExpandMore />
                     <select defaultValue={0} name="category" id="category">
                       <option disabled hidden>Select...</option>
                       <option>Manufacturing</option>
