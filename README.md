@@ -1,6 +1,6 @@
 # Next.js Boilerplate
 
-Includes a small nice template (globals.scss), might add github pages later.
+Includes a small nice template (globals.scss)
 
 ## Demo:
 [https://nextjs-boilerplate-9aaqjnp0d-thelexoplexx.vercel.app/elements](https://nextjs-boilerplate-9aaqjnp0d-thelexoplexx.vercel.app/elements)
