@@ -1,6 +1,9 @@
 # Next.js Boilerplate
 
-Includes a small nice template (globals.scss)
+Enthält ein kleines Template (globals.scss)
+
+## Benutzung
+`npx create-next-app --example https://github.com/TheLexoPlexx/nextjs-boilerplate`
 
 ## Demo:
 [https://nextjs-boilerplate-eight-ecru.vercel.app/elements](https://nextjs-boilerplate-eight-ecru.vercel.app/elements)
@@ -11,13 +14,10 @@ Includes a small nice template (globals.scss)
 * Sass
 * PostgreSQL and Prisma
 
-## Now includes [React-Icons](https://www.npmjs.com/package/react-icons)
+## Enthält jetzt [React-Icons](https://www.npmjs.com/package/react-icons)
 [Docs](https://react-icons.github.io/react-icons/)
 
-## Updating:
+## Update:
 `npm update`
 
 `npm i -g npm-check-updates`
-
-## Todo:
-* Optimize Image for better styling
