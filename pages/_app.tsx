@@ -13,13 +13,19 @@ const raleway = Raleway({
 const roboto_slab = Roboto_Slab({
   fallback: [ "serif" ],
   subsets: [ "latin"],
-  variable: "--font-hx"
+  weight: [ "600" ],
 });
 
 function App({ Component, pageProps }: AppProps) {
-  const dummy_hx = roboto_slab.className
   return (
     <main className={raleway.className}>
+      <style jsx global>
+      {`
+        :root {
+          --font-hx: ${roboto_slab.style.fontFamily};
+        }
+      `}
+      </style>
       <Component {...pageProps} />
     </main>
   )
