@@ -3,9 +3,6 @@ import Image from "next/image"
 
 import { MdBackpack, MdCheck, MdDownload, MdExpandMore, MdFacebook, MdHandyman, MdKeyboard, MdPages, MdSearch } from "react-icons/md"
 
-import pic01 from "../public/pic01.jpg"
-import pic02 from "../public/pic02.jpg"
-
 const Home: NextPage = () => {
   return (
     <div className="container">
