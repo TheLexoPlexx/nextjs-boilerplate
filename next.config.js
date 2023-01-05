@@ -6,6 +6,6 @@ module.exports = {
   reactStrictMode: true,
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
-    prependData: `@import "styles/mixins.scss";`
+    prependData: `@import "sh_theme/mixins.scss";`
   }
 }

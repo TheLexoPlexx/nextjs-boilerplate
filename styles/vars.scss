@@ -1,0 +1,29 @@
+:root {
+  //s&h colors
+  --sh-blue: #002148; //Nicht-ganz-Oxford-Blau
+  --henos-aqua: #00cdcd;
+  --henos-gray: #1f2022;
+
+	--link-color: var(--sh-blue); //#99c7ff; 
+
+	//new colors
+	--accent-1: var(--sh-blue);
+	--accent-2: #222;
+	--paragraph-color: #444; //Content
+	--header-color: #555; //Headers
+	--gray-3: #bbb;
+	--gray-4: #e5e5e5;
+
+  --white: #fff; //weiß
+  --black: #000; //Schwarz
+
+	--nearly-white: #f2f2f2;
+
+	--form-background: rgbax(144, 144, 144, 0.075);
+	--form-border: rgbax(144, 144, 144, 0.25)
+
+	--background: var(--white);
+
+  // body font size
+  --text-base-size: 1em;
+}
