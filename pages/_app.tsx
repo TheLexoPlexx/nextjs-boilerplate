@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app';
 
 import '../styles/containers.css'; //entfernen
-import '../styles/globals.scss';
+import '../sh_theme/globals.scss';
 
 import { Raleway, Roboto_Slab } from '@next/font/google';
 
