@@ -1,29 +1,20 @@
 :root {
-  //s&h colors
+	//s&h colors
   --sh-blue: #002148; //Nicht-ganz-Oxford-Blau
   --henos-aqua: #00cdcd;
   --henos-gray: #1f2022;
 
-	--link-color: var(--sh-blue); //#99c7ff; 
+	--link-color: var(--sh-blue); //#99c7ff;
 
 	//new colors
-	--accent-1: var(--sh-blue);
-	--accent-2: #222;
-	--paragraph-color: #444; //Content
-	--header-color: #555; //Headers
-	--gray-3: #bbb;
-	--gray-4: #e5e5e5;
+	--primary: var(--sh-blue);
+	--secondary: #222;
 
-  --white: #fff; //weiß
-  --black: #000; //Schwarz
+	--paragraph: var(--secondary); //body > p, buttons
+	--header: #555; //h1, h2, h3, h4, h5, h6, hr, strong, b, textarea, label
+	--sub: #bbb; //subtitles, disabled und placeholders
 
-	--nearly-white: #f2f2f2;
+  --primary-contrast: #fff; //weiß
 
-	--form-background: rgbax(144, 144, 144, 0.075);
-	--form-border: rgbax(144, 144, 144, 0.25)
-
-	--background: var(--white);
-
-  // body font size
-  --text-base-size: 1em;
+	--background: #f2f2f2; //background color
 }
