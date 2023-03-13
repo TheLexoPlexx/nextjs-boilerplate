@@ -21,3 +21,15 @@ Enthält ein kleines Template (globals.scss)
 `npm update`
 
 `npm i -g npm-check-updates`
+
+----
+
+# Todo:
+Accessibility and Color Tools such as:
+* react-a11y
+* eslint-plugin-jsx-a11y
+* color-contrast-checker
+* polished
+* accessibility-insights-web
+
+and other performance-related stuff.
