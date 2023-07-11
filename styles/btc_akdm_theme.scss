@@ -1,0 +1,35 @@
+:root {
+  --background: #283044; //background color
+  --primary: #e8aa14; //harvest gold
+  --secondary: #EBF5EE; //space cadet
+  --link-color: #089981; //persian green
+  --header: var(--primary);
+  --sub: #F2C969; //lighter shade of harvest gold
+}
+
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  border-radius: 100px;
+
+  &.special {
+    &:hover {
+      background-color: var(--link-color);
+    }
+  }
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+  border-radius: 100px;
+}
+
+textarea,
+code {
+  border-radius: 10px;
+}
