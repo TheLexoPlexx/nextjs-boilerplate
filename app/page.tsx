@@ -1,13 +1,11 @@
-import type { NextPage } from "next"
-
 import { MdBackpack, MdCheck, MdDownload, MdFacebook, MdHandyman, MdKeyboard, MdPages, MdSearch } from "react-icons/md"
 
-const Home: NextPage = () => {
+export default function Home() {
 
   return (
     <div className="container">
       <h1>Elements</h1>
-         <hr />
+      <hr />
 
       <div className="row">
         <div className="6u 12u$(medium)">
@@ -317,5 +315,3 @@ const Home: NextPage = () => {
     </div>
   )
 }
-
-export default Home
