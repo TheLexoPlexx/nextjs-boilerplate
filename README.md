@@ -1,6 +1,6 @@
 # Next.js Boilerplate
 
-Enthält ein kleines Template (globals.scss)
+Contains a small theme (sh_theme)
 
 ## Benutzung
 `npx create-next-app --example https://github.com/TheLexoPlexx/nextjs-boilerplate`
@@ -25,7 +25,8 @@ Enthält ein kleines Template (globals.scss)
 ----
 
 # Todo:
-Accessibility and Color Tools such as:
+* appDir
+* purecss/cleancss?
 * react-a11y
 * eslint-plugin-jsx-a11y
 * color-contrast-checker

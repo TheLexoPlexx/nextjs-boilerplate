@@ -1,5 +1,4 @@
 import type { NextPage } from "next"
-import { CSSProperties } from "react"
 
 import { MdBackpack, MdCheck, MdDownload, MdFacebook, MdHandyman, MdKeyboard, MdPages, MdSearch } from "react-icons/md"
 

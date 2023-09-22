@@ -1,0 +1,25 @@
+{
+  "name": "sh_theme",
+  "version": "1.0.0",
+  "description": "Default Theme for S&H-Projects",
+  "main": "out/index.js",
+  "scripts": {
+    "start": "tsc && node out/index.js",
+    "npm-upgrade-packages": "ncu -u && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thelexoplexx/sh_theme.git"
+  },
+  "author": "Alexander Heuwes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thelexoplexx/sh_theme/issues"
+  },
+  "homepage": "https://github.com/thelexoplexx/sh_theme#readme",
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
