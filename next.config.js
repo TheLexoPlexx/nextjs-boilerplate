@@ -4,7 +4,4 @@ const path = require('path')
 
 module.exports = {
   reactStrictMode: true,
-  experimental: {
-    serverActions: true,
-  },
 }

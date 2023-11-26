@@ -1,6 +1,5 @@
 import './containers.css'; //entfernen
 import 'sh_theme/globals.scss';
-import "styles/btc_akdm_theme.scss";
 
 import { IBM_Plex_Sans_Condensed, Montserrat } from 'next/font/google';
 
