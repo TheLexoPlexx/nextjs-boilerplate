@@ -1,36 +1,28 @@
-# Next.js Boilerplate
+## Getting Started
 
-Contains a small theme (sh_theme)
+First, run the development server:
 
-## Benutzung
-`npx create-next-app --example https://github.com/TheLexoPlexx/nextjs-boilerplate`
+```bash
+yarn dev
+```
 
-## Demo:
-[https://nextjs-boilerplate-eight-ecru.vercel.app/elements](https://nextjs-boilerplate-eight-ecru.vercel.app/elements)
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Stack:
-* [Next.js](https://nextjs.org/docs)
-* Typescript
-* Sass
-* PostgreSQL and Prisma
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Enthält jetzt [React-Icons](https://www.npmjs.com/package/react-icons)
-[Docs](https://react-icons.github.io/react-icons/)
+To create [API routes](https://nextjs.org/docs/app/building-your-application/routing/router-handlers) add an `api/` directory to the `app/` directory with a `route.ts` file. For individual endpoints, create a subfolder in the `api` directory, like `api/hello/route.ts` would map to [http://localhost:3000/api/hello](http://localhost:3000/api/hello).
 
-## Update:
-`npm update`
+## Learn More
 
-`npm i -g npm-check-updates`
+To learn more about Next.js, take a look at the following resources:
 
-----
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn/foundations/about-nextjs) - an interactive Next.js tutorial.
 
-# Todo:
-* appDir
-* purecss/cleancss?
-* react-a11y
-* eslint-plugin-jsx-a11y
-* color-contrast-checker
-* polished
-* accessibility-insights-web
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-and other performance-related stuff.
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_source=github.com&utm_medium=referral&utm_campaign=turborepo-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

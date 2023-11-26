@@ -1,0 +1,35 @@
+{
+  "name": "elements",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prisma studio": "npx prisma studio --browser firefox",
+    "prisma migrate": "npx prisma migrate dev --name init",
+    "prisma gen": "npx prisma generate",
+    "prisma format": "npx prisma format",
+    "ncui": "ncu -u && bun install"
+  },
+  "dependencies": {
+    "next": "^14.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.12.0",
+    "@repo/canvas": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "20.10.0",
+    "@types/react": "18.2.38",
+    "@types/react-dom": "^18.2.17",
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "eslint": "8.54.0",
+    "eslint-config-next": "^14.0.3",
+    "prisma": "^5.6.0",
+    "sass": "^1.69.5",
+    "typescript": "5.3.2"
+  }
+}

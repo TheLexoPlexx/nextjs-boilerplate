@@ -1,317 +1,129 @@
-import { MdBackpack, MdCheck, MdDownload, MdFacebook, MdHandyman, MdKeyboard, MdPages, MdSearch } from "react-icons/md"
+import Image from "next/image";
+import styles from "./page.module.css";
 
-export default function Home() {
-
+function Gradient({
+  conic,
+  className,
+  small,
+}: {
+  small?: boolean;
+  conic?: boolean;
+  className?: string;
+}): JSX.Element {
   return (
-    <div className="container">
-      <h1>Elements</h1>
-      <hr />
+    <span
+      className={[
+        styles.gradient,
+        conic ? styles.glowConic : undefined,
+        small ? styles.gradientSmall : styles.gradientLarge,
+        className,
+      ]
+        .filter(Boolean)
+        .join(" ")}
+    />
+  );
+}
 
-      <div className="row">
-        <div className="6u 12u$(medium)">
+const LINKS = [
+  {
+    title: "Docs",
+    href: "https://turbo.build/repo/docs",
+    description: "Find in-depth information about Turborepo features and API.",
+  },
+  {
+    title: "Learn",
+    href: "https://turbo.build/repo/docs/handbook",
+    description: "Learn more about monorepos with our handbook.",
+  },
+  {
+    title: "Templates",
+    href: "https://turbo.build/repo/docs/getting-started/from-example",
+    description: "Choose from over 15 examples and deploy with a single click.",
+  },
+  {
+    title: "Deploy",
+    href: "https://vercel.com/new",
+    description:
+      " Instantly deploy your Turborepo to a shareable URL with Vercel.",
+  },
+];
 
-
-          <h3>Text</h3>
-          <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-            This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-            This is <u>underlined</u> and this is code: <code>for (;;) </code>.
-            Finally, this is a <a href="#">link</a>.</p>
-          <hr />
-          <h1>Heading Level 1</h1>
-          <h2>Heading Level 2</h2>
-          <h3>Heading Level 3</h3>
-          <h4>Heading Level 4</h4>
-          <h5>Heading Level 5</h5>
-          <h6>Heading Level 6</h6>
-          <hr />
-          <header>
-            <h2>Heading with a Subtitle</h2>
-            <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-          </header>
-          <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-          <header>
-            <h3>Heading with a Subtitle</h3>
-            <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-          </header>
-          <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-          <header>
-            <h4>Heading with a Subtitle</h4>
-            <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-          </header>
-          <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-
-          <hr />
-
-          <h3>Lists</h3>
-          <div className="row">
-            <div className="6u 12u$(small)">
-
-              <h4>Unordered</h4>
-              <ul>
-                <li>Dolor pulvinar etiam magna etiam.</li>
-                <li>Sagittis adipiscing lorem eleifend.</li>
-                <li>Felis enim feugiat dolore viverra.</li>
-              </ul>
-
-              <h4>Icons</h4>
-              <ul className="icons">
-                <li><MdPages /></li>
-                <li><MdHandyman /></li>
-                <li><MdKeyboard /></li>
-                <li><MdBackpack /></li>
-                <li><MdFacebook /></li>
-              </ul>
-
-            </div>
-            <div className="6u$ 12u$(small)">
-
-              <h4>Ordered</h4>
-              <ol>
-                <li>Dolor pulvinar etiam magna etiam.</li>
-                <li>Etiam vel felis at lorem sed viverra.</li>
-                <li>Felis enim feugiat dolore viverra.</li>
-                <li>Dolor pulvinar etiam magna etiam.</li>
-                <li>Etiam vel felis at lorem sed viverra.</li>
-                <li>Felis enim feugiat dolore viverra.</li>
-              </ol>
-
-            </div>
-          </div>
-
-          <hr />
-
-          <h3>Table</h3>
-          <div className="table-wrapper">
-            <table>
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Description</th>
-                  <th>Price</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Item 1</td>
-                  <td>Ante turpis integer aliquet porttitor.</td>
-                  <td>29.99</td>
-                </tr>
-                <tr>
-                  <td>Item 2</td>
-                  <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                  <td>19.99</td>
-                </tr>
-                <tr>
-                  <td>Item 3</td>
-                  <td> Morbi faucibus arcu accumsan lorem.</td>
-                  <td>29.99</td>
-                </tr>
-                <tr>
-                  <td>Item 4</td>
-                  <td>Vitae integer tempus condimentum.</td>
-                  <td>19.99</td>
-                </tr>
-                <tr>
-                  <td>Item 5</td>
-                  <td>Ante turpis integer aliquet porttitor.</td>
-                  <td>29.99</td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <td colSpan={2}></td>
-                  <td>100.00</td>
-                </tr>
-              </tfoot>
-            </table>
-          </div>
-
-          <hr />
-
-          <h3>Blockquote</h3>
-          <blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis.</blockquote>
-
-        </div>
-        <div className="6u$ 12u$(medium)">
-
-          <h3>Buttons</h3>
-          <ul className="actions">
-            <li><a href="#" className="button special">Special</a></li>
-            <li><a href="#" className="button">Default</a></li>
-            <li><a href="#" className="button alt">Alternate</a></li>
-          </ul>
-          <ul className="actions">
-            <li><a href="#" className="button special big">Big</a></li>
-            <li><a href="#" className="button">Default</a></li>
-            <li><a href="#" className="button alt small">Small</a></li>
-          </ul>
-          <ul className="actions fit">
-            <li><a href="#" className="button special fit">Fit</a></li>
-            <li><a href="#" className="button fit">Fit</a></li>
-            <li><a href="#" className="button alt fit">Fit</a></li>
-          </ul>
-          <ul className="actions fit small">
-            <li><button className="button special fit small">Fit + Small</button></li>
-            <li><button className="button fit small">Fit + Small</button></li>
-            <li><button className="button alt fit small">Fit + Small</button></li>
-          </ul>
-          <ul className="actions">
-            <li><a href="#" className="button special icon"><MdSearch />Icon</a></li>
-            <li><a href="#" className="button icon"><MdDownload />Icon</a></li>
-            <li><a href="#" className="button alt icon"><MdCheck />Icon</a></li>
-          </ul>
-          <ul className="actions">
-            <li><button className="special disabled">Special</button></li>
-            <li><button className="button disabled">Default</button></li>
-            <li><button className="button alt disabled">Alternate</button></li>
-          </ul>
-
-          <hr />
-
-          <h3>Form</h3>
-
-          <form method="post" action="#">
-            <div className="row uniform">
-              <div className="6u 12u$(xsmall)">
-                <input type="text" name="name" id="name" placeholder="Name" />
-              </div>
-              <div className="6u$ 12u$(xsmall)">
-                <input type="email" name="email" id="email" placeholder="Email" />
-              </div>
-
-              <div className="12u$">
-                <select defaultValue={0} name="category" id="category">
-                  <option disabled hidden>Select...</option>
-                  <option>Manufacturing</option>
-                  <option>Shipping</option>
-                  <option>Administration</option>
-                  <option>Human Resources</option>
-                </select>
-              </div>
-
-              <div className="4u 12u$(small)">
-                <input type="radio" id="priority-low" name="priority" />
-                <label htmlFor="priority-low">Low Priority</label>
-              </div>
-              <div className="4u 12u$(small)">
-                <input type="radio" id="priority-normal" name="priority" />
-                <label htmlFor="priority-normal">Normal Priority</label>
-              </div>
-              <div className="4u$ 12u$(small)">
-                <input type="radio" id="priority-high" name="priority" />
-                <label htmlFor="priority-high">High Priority</label>
-              </div>
-
-              <div className="6u 12u$(small)">
-                <input type="checkbox" id="copy" name="copy" />
-                <label htmlFor="copy">Email me a copy of this message</label>
-              </div>
-              <div className="6u$ 12u$(small)">
-                <input type="checkbox" id="human" name="human" />
-                <label htmlFor="human">I am a human and not a robot</label>
-              </div>
-
-              <div className="12u$">
-                <textarea name="message" id="message" placeholder="Enter your message" rows={6}></textarea>
-              </div>
-
-              <div className="12u$">
-                <ul className="actions">
-                  <li><button type="submit">Send Message</button></li>
-                  <li><button type="reset" className="alt">Reset</button></li>
-                </ul>
-              </div>
-            </div>
-          </form>
-
-          <hr />
-
-          <form method="post" action="#">
-            <div className="row uniform">
-              <div className="9u 12u$(small)">
-                <input type="text" name="query" id="query" placeholder="Query" />
-              </div>
-              <div className="3u$ 12u$(small)">
-                <button type="submit" className="fit">Search</button>
-              </div>
-            </div>
-          </form>
-
-          <hr />
-
-          <h3>Preformatted</h3>
-          <pre><code>i = 0;
-
-            print &quot;It took &quot; + i + &quot; iterations to sort the deck.&quot;;
-          </code></pre>
-
-          <hr />
-
-          <h4>Actions</h4>
-          <ul className="actions">
-            <li><a href="#" className="button special">Default</a></li>
-            <li><a href="#" className="button">Default</a></li>
-            <li><a href="#" className="button alt">Default</a></li>
-          </ul>
-          <ul className="actions small">
-            <li><a href="#" className="button special">Small</a></li>
-            <li><a href="#" className="button">Small</a></li>
-            <li><a href="#" className="button alt">Small</a></li>
-          </ul>
-          <div className="row">
-            <div className="3u 12u$(small)">
-              <ul className="actions vertical">
-                <li><a href="#" className="button special">Default</a></li>
-                <li><a href="#" className="button">Default</a></li>
-                <li><a href="#" className="button alt">Default</a></li>
-              </ul>
-            </div>
-            <div className="3u 12u$(small)">
-              <ul className="actions vertical small">
-                <li><a href="#" className="button special">Small</a></li>
-                <li><a href="#" className="button">Small</a></li>
-                <li><a href="#" className="button alt">Small</a></li>
-              </ul>
-            </div>
-            <div className="3u 12u$(small)">
-              <ul className="actions vertical">
-                <li><a href="#" className="button special">Default</a></li>
-                <li><a href="#" className="button">Default</a></li>
-                <li><a href="#" className="button alt">Default</a></li>
-              </ul>
-            </div>
-            <div className="3u$ 12u$(small)">
-              <ul className="actions vertical small">
-                <li><a href="#" className="button special">Small</a></li>
-                <li><a href="#" className="button">Small</a></li>
-                <li><a href="#" className="button alt">Small</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <hr />
-
-          <h4>Definition</h4>
-          <dl>
-            <dt>Item 1</dt>
-            <dd>
-              <p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-            </dd>
-            <dt>Item 2</dt>
-            <dd>
-              <p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-            </dd>
-            <dt>Item 3</dt>
-            <dd>
-              <p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-            </dd>
-          </dl>
-
+export default function Page(): JSX.Element {
+  return (
+    <main className={styles.main}>
+      <div className={styles.description}>
+        <p>
+          examples/basic&nbsp;web
+        </p>
+        <div>
+          <a
+            href="https://vercel.com?utm_source=create-turbo&utm_medium=basic&utm_campaign=create-turbo"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            By{" "}
+            <Image
+              alt="Vercel Logo"
+              className={styles.vercelLogo}
+              height={24}
+              priority
+              src="/vercel.svg"
+              width={100}
+            />
+          </a>
         </div>
       </div>
 
-      <hr />
+      <div className={styles.hero}>
+        <div className={styles.heroContent}>
+          <div className={styles.logos}>
+            <div className={styles.circles}>
+              <Image
+                alt="Turborepo"
+                height={614}
+                src="circles.svg"
+                width={614}
+              />
+            </div>
+            <div className={styles.logoGradientContainer}>
+              <Gradient className={styles.logoGradient} conic small />
+            </div>
 
-    </div>
-  )
+            <div className={styles.logo}>
+              <Image
+                alt=""
+                height={120}
+                priority
+                src="turborepo.svg"
+                width={120}
+              />
+            </div>
+          </div>
+          <Gradient className={styles.backgroundGradient} conic />
+          <div className={styles.turborepoWordmarkContainer}>
+            <svg
+              className={styles.turborepoWordmark}
+              viewBox="0 0 506 50"
+              width={200}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Turborepo logo</title>
+              <path d="M53.7187 12.0038V1.05332H0.945312V12.0038H20.8673V48.4175H33.7968V12.0038H53.7187Z" />
+              <path d="M83.5362 49.1431C99.764 49.1431 108.67 40.8972 108.67 27.3081V1.05332H95.7401V26.0547C95.7401 33.6409 91.7821 37.9287 83.5362 37.9287C75.2904 37.9287 71.3324 33.6409 71.3324 26.0547V1.05332H58.4029V27.3081C58.4029 40.8972 67.3084 49.1431 83.5362 49.1431Z" />
+              <path d="M128.462 32.7174H141.325L151.484 48.4175H166.327L154.848 31.3321C161.313 29.0232 165.271 23.8778 165.271 16.8853C165.271 6.72646 157.685 1.05332 146.141 1.05332H115.532V48.4175H128.462V32.7174ZM128.462 22.4925V11.8719H145.481C150.033 11.8719 152.54 13.8509 152.54 17.2152C152.54 20.3816 150.033 22.4925 145.481 22.4925H128.462Z" />
+              <path d="M171.287 48.4175H205.128C215.683 48.4175 221.752 43.404 221.752 35.0262C221.752 29.419 218.189 25.593 213.967 23.8778C216.87 22.4925 220.432 19.1942 220.432 13.9828C220.432 5.60502 214.495 1.05332 204.006 1.05332H171.287V48.4175ZM183.689 19.59V11.542H202.687C206.249 11.542 208.228 12.9273 208.228 15.566C208.228 18.2047 206.249 19.59 202.687 19.59H183.689ZM183.689 29.2871H203.875C207.371 29.2871 209.284 31.0022 209.284 33.5749C209.284 36.1476 207.371 37.8628 203.875 37.8628H183.689V29.2871Z" />
+              <path d="M253.364 0.261719C236.806 0.261719 224.866 10.6185 224.866 24.7354C224.866 38.8523 236.806 49.2091 253.364 49.2091C269.922 49.2091 281.796 38.8523 281.796 24.7354C281.796 10.6185 269.922 0.261719 253.364 0.261719ZM253.364 11.4761C262.072 11.4761 268.602 16.6215 268.602 24.7354C268.602 32.8493 262.072 37.9947 253.364 37.9947C244.656 37.9947 238.126 32.8493 238.126 24.7354C238.126 16.6215 244.656 11.4761 253.364 11.4761Z" />
+              <path d="M300.429 32.7174H313.292L323.451 48.4175H338.294L326.815 31.3321C333.28 29.0232 337.238 23.8778 337.238 16.8853C337.238 6.72646 329.652 1.05332 318.108 1.05332H287.499V48.4175H300.429V32.7174ZM300.429 22.4925V11.8719H317.448C322 11.8719 324.507 13.8509 324.507 17.2152C324.507 20.3816 322 22.4925 317.448 22.4925H300.429Z" />
+              <path d="M343.254 1.05332V48.4175H389.299V37.467H355.92V29.7489H385.539V19.0622H355.92V12.0038H389.299V1.05332H343.254Z" />
+              <path d="M408.46 33.3111H425.677C437.221 33.3111 444.807 27.7699 444.807 17.2152C444.807 6.59453 437.221 1.05332 425.677 1.05332H395.53V48.4175H408.46V33.3111ZM408.46 22.5585V11.8719H424.951C429.569 11.8719 432.076 13.8509 432.076 17.2152C432.076 20.5135 429.569 22.5585 424.951 22.5585H408.46Z" />
+              <path d="M476.899 0.261719C460.341 0.261719 448.401 10.6185 448.401 24.7354C448.401 38.8523 460.341 49.2091 476.899 49.2091C493.456 49.2091 505.33 38.8523 505.33 24.7354C505.33 10.6185 493.456 0.261719 476.899 0.261719ZM476.899 11.4761C485.606 11.4761 492.137 16.6215 492.137 24.7354C492.137 32.8493 485.606 37.9947 476.899 37.9947C468.191 37.9947 461.66 32.8493 461.66 24.7354C461.66 16.6215 468.191 11.4761 476.899 11.4761Z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.grid}>
+      </div>
+    </main>
+  );
 }
