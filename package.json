@@ -10,7 +10,6 @@
   "devDependencies": {
     "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
-    "@repo/canvas": "*",
     "prettier": "^3.1.0",
     "turbo": "latest"
   },

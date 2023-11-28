@@ -1,59 +1,60 @@
 import { MdBackpack, MdCheck, MdDownload, MdFacebook, MdHandyman, MdKeyboard, MdPages, MdSearch } from "react-icons/md"
+import { H1, H3, H2, H4, H5, H6 } from "sh_canvas"
 
 export default function Home() {
 
   return (
     <div className="container">
-      <h1>Elements</h1>
+      <H1>Elements</H1>
       <hr />
 
       <div className="row">
         <div className="6u 12u$(medium)">
 
 
-          <h3>Text</h3>
+          <H3>Text</H3>
           <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
             This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
             This is <u>underlined</u> and this is code: <code>for (;;) </code>.
             Finally, this is a <a href="#">link</a>.</p>
           <hr />
-          <h1>Heading Level 1</h1>
-          <h2>Heading Level 2</h2>
-          <h3>Heading Level 3</h3>
-          <h4>Heading Level 4</h4>
-          <h5>Heading Level 5</h5>
-          <h6>Heading Level 6</h6>
+          <H1>Heading Level 1</H1>
+          <H2>Heading Level 2</H2>
+          <H3>Heading Level 3</H3>
+          <H4>Heading Level 4</H4>
+          <H5>Heading Level 5</H5>
+          <H6>Heading Level 6</H6>
           <hr />
           <header>
-            <h2>Heading with a Subtitle</h2>
+            <H2>Heading with a Subtitle</H2>
             <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
           </header>
           <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
           <header>
-            <h3>Heading with a Subtitle</h3>
+            <H3>Heading with a Subtitle</H3>
             <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
           </header>
           <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
           <header>
-            <h4>Heading with a Subtitle</h4>
+            <H4>Heading with a Subtitle</H4>
             <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
           </header>
           <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
 
           <hr />
 
-          <h3>Lists</h3>
+          <H3>Lists</H3>
           <div className="row">
             <div className="6u 12u$(small)">
 
-              <h4>Unordered</h4>
+              <H4>Unordered</H4>
               <ul>
                 <li>Dolor pulvinar etiam magna etiam.</li>
                 <li>Sagittis adipiscing lorem eleifend.</li>
                 <li>Felis enim feugiat dolore viverra.</li>
               </ul>
 
-              <h4>Icons</h4>
+              <H4>Icons</H4>
               <ul className="icons">
                 <li><MdPages /></li>
                 <li><MdHandyman /></li>
@@ -65,7 +66,7 @@ export default function Home() {
             </div>
             <div className="6u$ 12u$(small)">
 
-              <h4>Ordered</h4>
+              <H4>Ordered</H4>
               <ol>
                 <li>Dolor pulvinar etiam magna etiam.</li>
                 <li>Etiam vel felis at lorem sed viverra.</li>
@@ -80,7 +81,7 @@ export default function Home() {
 
           <hr />
 
-          <h3>Table</h3>
+          <H3>Table</H3>
           <div className="table-wrapper">
             <table>
               <thead>
@@ -128,13 +129,13 @@ export default function Home() {
 
           <hr />
 
-          <h3>Blockquote</h3>
+          <H3>Blockquote</H3>
           <blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis.</blockquote>
 
         </div>
         <div className="6u$ 12u$(medium)">
 
-          <h3>Buttons</h3>
+          <H3>Buttons</H3>
           <ul className="actions">
             <li><a href="#" className="button special">Special</a></li>
             <li><a href="#" className="button">Default</a></li>
@@ -168,7 +169,7 @@ export default function Home() {
 
           <hr />
 
-          <h3>Form</h3>
+          <H3>Form</H3>
 
           <form method="post" action="#">
             <div className="row uniform">
@@ -239,7 +240,7 @@ export default function Home() {
 
           <hr />
 
-          <h3>Preformatted</h3>
+          <H3>Preformatted</H3>
           <pre><code>i = 0;
 
             print &quot;It took &quot; + i + &quot; iterations to sort the deck.&quot;;
@@ -247,7 +248,7 @@ export default function Home() {
 
           <hr />
 
-          <h4>Actions</h4>
+          <H4>Actions</H4>
           <ul className="actions">
             <li><a href="#" className="button special">Default</a></li>
             <li><a href="#" className="button">Default</a></li>
@@ -291,7 +292,7 @@ export default function Home() {
 
           <hr />
 
-          <h4>Definition</h4>
+          <H4>Definition</H4>
           <dl>
             <dt>Item 1</dt>
             <dd>
